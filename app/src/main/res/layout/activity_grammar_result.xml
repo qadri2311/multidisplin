@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GrammarResult">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/gcr_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/gcr_nim"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:text="nim"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:background="@color/base"/>
+
+    <TextView
+        android:id="@+id/gcr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="569dp"
+        android:layout_marginTop="156dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gcr_grade"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corener_view"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/gcr_sugestion"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gcr_grade"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/rounded_corener_view"
+                android:paddingLeft="16dp"
+                android:paddingTop="48dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/gcr_Answer"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gcr_sugestion"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/rounded_corener_view"
+                android:paddingLeft="16dp"
+                android:paddingTop="48dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="TextView"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corner_icon"
+                android:padding="6dp"
+                android:src="@drawable/ic_idea_purpose" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gcr_grade"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corner_icon"
+                android:padding="6dp"
+                android:src="@drawable/ic_sugestion" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gcr_sugestion"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corner_icon"
+                android:padding="6dp"
+                android:src="@drawable/ic_answer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/gcr_grade"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="6dp"
+                android:text="Score"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/gcr_sugestion"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="6dp"
+                android:text="Sugestion"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/gcr_Answer"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="6dp"
+                android:text="Answer"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gcr_Answer"
+                android:layout_marginTop="325dp"
+                android:text="" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/gcr_barChart"
+                android:layout_width="360dp"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="90dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".grammarCheck">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/GC_header"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="95dp"
+        android:text="Student Profil"
+        android:textSize="30dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corener_view" />
+
+    <EditText
+        android:id="@+id/GC_NIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_corener_view"
+        android:hint="Student NIM"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/GC_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_corener_view"
+        android:hint="Student Name"
+        android:inputType="textMultiLine|textCapSentences"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/GC_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_corener_view"
+        android:hint="Title"
+        android:inputType="textMultiLine|textCapSentences"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+    <EditText
+        android:id="@+id/GC_Answer"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_corener_view"
+        android:gravity="top"
+        android:hint="type your answer"
+        android:inputType="textMultiLine|textCapSentences"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/GC_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="458dp"
+        android:padding="16dp"
+        android:onClick="navigation"
+        android:background="@drawable/rounded_corener_button"
+        android:text="Input Answer" />
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/GC_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="570dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_corener_button"
+        android:onClick="navigation"
+        android:text="Submit"
+        app:spinning_bar_color="@android:color/black"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="2dp" />
+
+    <TextView
+        android:id="@+id/GC_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="466dp"
+        android:layout_toEndOf="@+id/GC_back"
+        android:background="@drawable/rounded_corener_view"
+        android:padding="8dp"
+        android:textColor="@android:color/holo_red_light" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="287dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/input_title"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+</RelativeLayout>

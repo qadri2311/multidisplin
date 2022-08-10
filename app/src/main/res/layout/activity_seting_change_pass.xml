@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".Seting_changePass">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/changepass"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:text="Change Password"
+        android:padding="16dp"
+        android:textSize="30dp"
+        android:gravity="center|top"
+        android:background="@drawable/rounded_corener_view"/>
+
+    <TextView
+        android:id="@+id/currentUsernameP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/changepass"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corener_view"
+        android:padding="8dp"
+        android:text="..."
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/currentPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentUsernameP"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corener_view"
+        android:gravity="center"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/new_pass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPass"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corener_view"
+        android:gravity="center"
+        android:hint="New PassWord"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/retype"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_pass"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corener_view"
+        android:gravity="center"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/setting_passSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rounded_corener_button"
+        android:onClick="navigation"
+        android:text="save" />
+
+    <TextView
+        android:id="@+id/setting_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retype"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rounded_corener_view"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible" />
+</RelativeLayout>

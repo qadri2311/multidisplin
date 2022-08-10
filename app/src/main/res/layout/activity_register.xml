@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="350dp"
+        android:layout_height="490dp"
+        android:text="Register"
+        android:textSize="40dp"
+        android:gravity="center|top"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corener_view"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_UsernameCol"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corener_view"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" >
+
+        <EditText
+            android:id="@+id/et_regUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_username"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_EmailCol"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_UsernameCol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corener_view"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" >
+
+        <EditText
+            android:id="@+id/et_regEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_PassCol"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ckx_student"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corener_view"
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" >
+
+        <EditText
+            android:id="@+id/et_regPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_pass"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_regRegister"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_PassCol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corener_button"
+        android:onClick="navigation"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/btn_regCencel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_regRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="navigation"
+        android:text="Already have an account?"
+        android:textColor="@color/base" />
+
+    <CheckBox
+        android:id="@+id/ckx_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_EmailCol"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/base"
+        android:text="Student"
+        android:textColor="@android:color/tab_indicator_text" />
+
+    <CheckBox
+        android:id="@+id/ckx_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_EmailCol"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/base"
+        android:text="Teacher"
+        android:textColor="@android:color/tab_indicator_text" />
+
+    <TextView
+        android:id="@+id/tv_register_check"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/rounded_corner_warning"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

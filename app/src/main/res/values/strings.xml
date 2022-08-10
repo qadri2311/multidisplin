@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">multidisplin</string>
+
+    <string name="faq_1_1">
+        - This application is used to input essay answers to be corrected automatically by AI.\n
+        - If you are logged in as a teacher, you can enter essay answers.\n
+        - Students can only see the value of the essay that has been inputted.\n
+        - To input the essai answer press the (+) button on bottom corner.\n
+        - You can use the search bar to find your previous essai that have been  check.\n
+        - Press one item on the history list to see the result of your previous work.\n
+    </string>
+
+    <string name="faq_2_1">
+        - This page is used to enter your essai.\n
+        - You must fill the student name, NIM, essai title and essai answer to submit the essai.\n
+        - Whew essai submited, Api will send the answer to be corrected by AI.\n
+        - User must wait for the application to load the score by ai.\n
+    </string>
+
+    <string name="faq_3_1">
+        - This page will display the result of your essai.\n
+        - Score detail show student essai result.\n
+        - Score is displayed in the form of a bar chart.\n
+        - Focus and purpose is a reflection of your essays.\n
+        - Idea and development is making, developing, and communicating ideas from abstract ones to concrete concepts that can be applied in essays.\n
+        - Suggestion shows grammar errors in essay.\n
+        - You can see grammar mistakes in suggestions.\n
+    </string>
+
+</resources>

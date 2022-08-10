@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".Setting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/texttessss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setting"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corener_view"
+        android:text="Setting"
+        android:padding="16dp"
+        android:textSize="30dp"
+        android:gravity="center|top"/>
+
+    <Button
+        android:id="@+id/setting_usernameV2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/setting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/rounded_corener_button"
+        android:onClick="navigation"
+        android:text="Change Username" />
+
+    <Button
+        android:id="@+id/setting_passV2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_usernameV2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corener_button"
+        android:onClick="navigation"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/setting_faq"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_passV2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corener_button"
+        android:onClick="navigation"
+        android:text="FAQ" />
+
+    <TextView
+        android:id="@+id/seeting_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_faq"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="navigation"
+        android:text="Logout"
+        android:textColor="@color/base" />
+</RelativeLayout>

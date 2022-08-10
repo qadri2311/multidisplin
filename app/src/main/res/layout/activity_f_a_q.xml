@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".FAQ">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/faq_ttollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="Frequently Asked Question (FAQ)"
+        android:textSize="30dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corener_view" />
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="430dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/rounded_corener_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/faq_1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/faq_1_1"
+                android:paddingLeft="16dp"
+                android:paddingTop="32dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_corener_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/faq_1"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="40dp"
+                android:text="Main Menu"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_faq"
+                android:padding="6dp"
+                android:background="@drawable/rounded_corner_icon"/>
+
+            <TextView
+                android:id="@+id/faq_2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faq_1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/faq_2_1"
+                android:paddingLeft="16dp"
+                android:paddingTop="32dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_corener_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/faq_2"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="40dp"
+                android:text="Essai Input"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faq_1"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corner_icon"
+                android:padding="6dp"
+                android:src="@drawable/ic_faq" />
+
+            <TextView
+                android:id="@+id/faq_3"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faq_2"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/faq_3_1"
+                android:paddingLeft="16dp"
+                android:paddingTop="32dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_corener_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/faq_3"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="40dp"
+                android:text="Result"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faq_2"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corner_icon"
+                android:padding="6dp"
+                android:src="@drawable/ic_faq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="800dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
